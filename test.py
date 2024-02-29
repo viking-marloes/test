@@ -4,6 +4,10 @@ from bs4 import BeautifulSoup
 import streamlit as st
 from openpyxl import load_workbook
 
+# Display the logo at the top of your app
+logo_url = "https://images.ctfassets.net/w2u6i2262322/6AofuFJgqbIYLaRjD6tQZs/6c98da389f59d48a8bd540f88d3f1afc/merchant_featured_1833.2661a954f317eab66ef2b67258f3644c5e7582f8.jpg?fm=webp&q=50&w=436&h=436&fit=pad"
+st.image(logo_url, width=200)  # Adjust the width as needed
+
 # Function to fetch the canonical URL
 def fetch_canonical_url(url):
     try:
